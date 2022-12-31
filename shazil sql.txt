@@ -1,0 +1,31 @@
+
+MariaDB [(none)]> use shazil;
+Database changed
+MariaDB [shazil]> create table std1(
+    -> id int primary key auto_increment,
+    -> name varchar(100) not null,
+    -> age int not null,
+    -> address varchar(100) not null);
+Query OK, 0 rows affected (0.099 sec)
+
+MariaDB [shazil]> show tables;
++------------------+
+| Tables_in_shazil |
++------------------+
+| hammad           |
+| std4             |
++------------------+
+2 rows in set (0.001 sec)
+
+MariaDB [shazil]> insert into std4 values(null,"shazil",78,"karachi");
+Query OK, 1 row affected (0.075 sec)
+
+MariaDB [shazil]> select * from std4;
++----+--------+-----+---------+
+| id | name   | age | address |
++----+--------+-----+---------+
+|  1 | shazil |  78 | karachi |
++----+--------+-----+---------+
+1 row in set (0.000 sec)
+
+MariaDB [shazil]>
